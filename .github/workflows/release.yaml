@@ -2,8 +2,14 @@ name: basebuild
 
 on:
   pull_request:
+    branches:
+      - master-main
+      - postgres
   push:
-    tags:        
+    branches:
+      - master-main
+      - postgres
+    tags:
       - '*'
 
 jobs:
